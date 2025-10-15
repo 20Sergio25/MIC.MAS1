@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Mic.Mas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  <style>
+        .indice-botones a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #bf930c; 
+            color: #ffffff; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo para resaltar la pestaña actual  a07d08*/
+        .indice-botones a[href="Pachones.html"] {
+            background-color: #3d3827; 
+            cursor: default;
+        }
+
+        .indice-botones a:hover {
+            background-color: #373017;
+        }
+
+        .boton-tarjeta-whatsapp {
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #bf930c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        /* Hero Section (Inicio) - Fondo de la animación */
+        .hero {
+            background: linear-gradient(rgba(119, 119, 119, 0.6), rgba(182, 178, 178, 0.6)), url('img/Sin\sa\ de\ trabajo\ 1.png') no-repeat center center/cover;
+            color: var(--text-light);
+            text-align: center;
+            padding: 100px 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .boton-tarjeta-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        /* Estilos del footer mejorados para una división clara */
+        footer {
+            background-image: url('img/1.ICNA-30.png');
+            background-size: cover;
+            background-position: center;
+            color: white; /* Asegura que el texto sea legible */
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+            padding: 20px 0;
+        }
+        
+        .footer-contact, .footer-social {
+            flex-basis: 45%; /* Ocupa casi la mitad del espacio */
+            padding: 10px;
+            margin: 10px;
+            /* Asegura que los elementos se centren en su respectiva columna */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+            }
+            .footer-contact, .footer-social {
+                flex-basis: 100%;
+            }
+        }
+        
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .footer-contact img {
+            margin-right: 10px;
+        }
+        .qr-code {
+            width: 120px;
+            height: auto;
+        }
+
+
+        
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+
+    
+    <header>
+        <div class="container">
+         
+               <img src="img/logo micmas (1)_Mesa de trabajo 1 (1).png" width="120" height="60">
+            <nav class="main-nav">
+                <button class="hamburger-menu" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                           <ul class="nav-list">
+                    <li> <a href="index.html" style="color: #ffffff;">Inicio</a></li>
+                    <li><a href="productos.html" style="color: rgb(255, 255, 255);">Productos</a></li>
+                    <li><a href="entregas.html" style="color: rgb(255, 255, 255);">Entregas</a></li>
+                    <li><a href="contactos.html" style="color: rgb(255, 255, 255);" >Contactos</a></li>
+                    <li><a href="promociones.html" style="color: rgb(255, 254, 253);">Promociones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contactos" class="section-info">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Estamos listos para ayudarte con tu próximo proyecto.</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h4>Información de Contacto</h4>
+                        <p><b>Teléfono:</b> 4235-7999 / 3749-8681</p>
+                        <p><b>Correo Electrónico:</b> info@micmas.com</p>
+                        <p><b>Dirección:</b> 11 avenida 14-10 zona 1, Apto. B, Ciudad de Guatemala</p>
+                    </div>
+                    <div class="contact-form">
+                        <h4>Envíanos un Mensaje</h4>
+                        <form action="#" method="post">
+                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                            <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <p>📞 4235 - 7999</p>
+                <p>📱 3749 - 8681</p>
+                <p>📍 11 avenida 14-10 zona 1, Apto. B</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <img src="https://via.placeholder.com/150.png?text=Codigo+QR" alt="QR Code" class="qr-code">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

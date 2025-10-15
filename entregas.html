@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazas - Mic.Mas</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+    
+    <style>
+
+    
+      .indice-botones a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #bf930c; 
+            color: #ffffff; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo para resaltar la pestaña actual  a07d08*/
+        .indice-botones a[href="Botellas.html"] {
+            background-color: #3d3827; 
+            cursor: default;
+        }
+
+        .indice-botones a:hover {
+            background-color: #373017;
+        }
+
+        .boton-tarjeta-whatsapp {
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #bf930c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        
+        .boton-tarjeta-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        /* Estilos del footer mejorados para una división clara */
+        footer {
+            background-image: url('img/1.ICONOGRAFIA/PIE\ DE\ PAGINA-30.png');
+            background-size: cover;
+            background-position: center;
+            color: white; /* Asegura que el texto sea legible */
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+            padding: 20px 0;
+        }
+        
+        .footer-contact, .footer-social {
+            flex-basis: 45%; /* Ocupa casi la mitad del espacio */
+            padding: 10px;
+            margin: 10px;
+            /* Asegura que los elementos se centren en su respectiva columna */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+            }
+            .footer-contact, .footer-social {
+                flex-basis: 100%;
+            }
+        }
+        
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .footer-contact img {
+            margin-right: 10px;
+        }
+        .qr-code {
+            width: 120px;
+            height: auto;
+        }
+        
+
+
+        .indice-botones a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #bf930c; 
+            color: #ffffff; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo para resaltar la pestaña actual */
+        .indice-botones a[href="entregas.html"] {
+        background-color: #3d3827; 
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <a href="entregas.html" class="boton-flotante" id="btn-envases-top" aria-label="Ir a la sección Envases">
+    
+    <img 
+        src="img/flecha2.png" 
+        alt="Ir arriba" 
+        style="width: 40px; height: 40px; display: block; margin: 0 auto;"
+    >
+    
+</a>
+    <header>
+        <div class="container">
+  <img src="img/logo micmas (1)_Mesa de trabajo 1 (1).png" width="120" height="60">            <nav class="main-nav">
+                <button class="hamburger-menu" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+             <ul class="nav-list">
+                    <li> <a href="index.html" style="color: #ffffff;">Inicio</a></li>
+                    <li><a href="productos.html" style="color: rgb(255, 255, 255);">Productos</a></li>
+                    <li><a href="entregas.html" style="color: rgb(255, 255, 255);">Entregas</a></li>
+                    <li><a href="contactos.html" style="color: rgb(255, 255, 255);" >Contactos</a></li>
+                    <li><a href="promociones.html" style="color: rgb(255, 254, 253);">Promociones</a></li>
+                </ul>            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <section id="entregas" class="section-info">
+            <div class="container">
+                <h2 class="section-title">Nuestras Entregas</h2>
+                <p class="section-subtitle">Conoce nuestras opciones de envío y entrega.</p>
+                <div class="info-content">
+                    <p>En Mic.Mas, nos aseguramos de que tus pedidos lleguen de manera segura y eficiente. Ofrecemos diferentes opciones de entrega para adaptarnos a tus necesidades:</p>
+                    <ul>
+                        <li><b>Entrega a Domicilio:</b> Servicio de envío a todo el país. Los costos varían según la ubicación.</li>
+                        <li><b>Retiro en Tienda:</b> Puedes recoger tu pedido en nuestra dirección sin costo adicional.</li>
+                        <li><b>Tiempos de Producción:</b> El tiempo de elaboración de los productos puede variar. Te lo confirmaremos al momento de realizar tu pedido.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+
+
+
+
+
+
+<footer>
+    <div class="footer-contact">
+        <h3 style="color: #bf930c;">Contáctanos</h3>
+        <div class="contact-items-wrapper">
+            <!-- WhatsApp -->
+            <div class="contact-item">
+                <img src="img/1.ICONOGRAFIA/REDES SOCIALES/iconos-24.png" alt="WhatsApp Icon" class="contact-icon">
+                <div class="contact-text">
+                    <p>Whatsapp</p>
+                    <p>5808 - 5010</p>
+                </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="contact-item">
+                <img src="img/1.ICONOGRAFIA/REDES SOCIALES/iconos-25.png" alt="Phone Icon" class="contact-icon">
+                <div class="contact-text">
+                    <p>Teléfono</p>
+                    <p>3749 - 8681</p>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="contact-item">
+                <img src="img/1.ICONOGRAFIA/REDES SOCIALES/iconos-27.png" alt="Instagram Icon" class="contact-icon">
+                <div class="contact-text">
+                    <p>Instagram</p>
+                    <p>micmasdetail</p>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <a href="https://maps.app.goo.gl/JrZTFUwXbgzXZfYu6" class="contact-item location-link" target="_blank" rel="noopener noreferrer">
+                <img src="img/1.ICONOGRAFIA/REDES SOCIALES/iconos-26.png" alt="Location Icon" class="contact-icon">
+                <p>11 Avenida 14-10, Cdad. de Guatemala</p>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
